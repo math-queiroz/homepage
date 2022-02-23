@@ -67,7 +67,7 @@ const InfoCard = () => {
           Competências
         </Heading>
         <List display="inline-grid" minWidth="225px">
-          <Text fontWeight="bold">Linguagens</Text>
+          <Text fontWeight="bold">Hard Skills</Text>
           <ListItem>JavaScript</ListItem>
           <ListItem>HTML/CSS</ListItem>
           <ListItem>Java</ListItem>
@@ -79,12 +79,12 @@ const InfoCard = () => {
           <br />
         </List>
         <List display="inline-grid" minWidth="225px">
-          <Text fontWeight="bold">Idiomas</Text>
+          <Text fontWeight="bold">Soft Skill</Text>
           <ListItem>Trabalho em Equipe</ListItem>
           <ListItem>Comunicação Clara</ListItem>
           <ListItem>Adaptabilidade</ListItem>
           <br />
-          <Text fontWeight="bold">Idiomas</Text>
+          <Text fontWeight="bold">Outras Competências</Text>
           <ListItem>Git</ListItem>
           <ListItem>Microsoft Office</ListItem>
           <ListItem>Ambiente Linux</ListItem>
