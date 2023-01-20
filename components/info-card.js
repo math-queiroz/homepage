@@ -56,7 +56,7 @@ const InfoCard = () => {
           Bio
         </Heading>
         <Paragraph>
-          Tenho 20 anos e sou um estudante de Análise e Desenvolvimento de
+          Tenho 21 anos e sou um estudante de Análise e Desenvolvimento de
           Sistemas em busca de uma oportunidade profissional para dar início à
           minha carreira em tecnologia.
         </Paragraph>
