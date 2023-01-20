@@ -21,9 +21,8 @@ jobs:
           NEXT_PUBLIC_BASE_PATH: /homepage
 
       - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@3.7.1
+        uses: JamesIves/github-pages-deploy-action@4.4.1
         with:
-          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          BRANCH: gh-pages
-          FOLDER: out
-          CLEAN: true
+          branch: gh-pages
+          folder: out
+          clean: true
