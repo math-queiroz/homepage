@@ -110,8 +110,7 @@ const Bio = () => {
             Sobre Este Site
           </Heading>
           <Paragraph>
-            Desenvolvido com Next.JS, grande parte da confecção deste site só
-            foi possível a partir do&nbsp;
+            Desenvolvido em Next.JS, parte da confecção deste site inspirou-se no&nbsp;
             <Link href="https://youtu.be/bSMZgXzC9AA" color={'indianred'}>
               vídeo
             </Link>
