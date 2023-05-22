@@ -57,7 +57,8 @@ const InfoCard = () => {
         </Heading>
         <Paragraph>
           Tenho 21 anos e sou um estudante de Análise e Desenvolvimento de
-          Sistemas da cidade de São Paulo atuando como Analista de Suporte Computacional.
+          Sistemas em busca de uma oportunidade profissional para dar início à
+          minha carreira em tecnologia.
         </Paragraph>
       </Section>
 
