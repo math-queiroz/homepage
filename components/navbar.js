@@ -48,6 +48,7 @@ const Navbar = props => {
       bg={useColorModeValue('#F1E8DBC0', '#000E24C0')}
       style={{ backdropFilter: 'blur(15px)', fontFamily: 'Sen' }}
       zIndex={1}
+      transition="background-color 0.2s ease"
       {...props}
     >
       <Container
