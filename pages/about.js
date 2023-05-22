@@ -29,7 +29,7 @@ const Bio = () => {
           mb={6}
         >
           <Image
-            mr={4}
+            mr={6}
             borderColor="whiteAlpha.800"
             borderWidth={2}
             borderStyle="solid"
@@ -41,7 +41,7 @@ const Bio = () => {
             alt="profile"
           ></Image>
           <Box p={1}>
-            <Heading as="h2" variant="page-title">
+            <Heading as="h2" size='lg' variant="page-title">
               Matheus Alves Queiroz
             </Heading>
             <p>Analista e Desenvolvedor de Sistemas</p>
