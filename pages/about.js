@@ -41,7 +41,7 @@ const Bio = () => {
             alt="profile"
           ></Image>
           <Box p={1}>
-            <Heading as="h3" variant="page-title">
+            <Heading as="h2" size="3xl" variant="page-title">
               Matheus Alves Queiroz
             </Heading>
             <p>Analista e Desenvolvedor de Sistemas</p>
