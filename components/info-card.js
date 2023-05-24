@@ -14,6 +14,13 @@ import Section from './section'
 
 import prefix from '../lib/image-prefix'
 
+const calcYearsFromDate = (birthDate) => {
+  const EPOCH_START = 1970
+  let dateDiff = new Date(new Date() - birthDate.getTime())
+  let age = Math.abs(dateDiff.getUTCFullYear() - EPOCH_START)
+  return age.toString()
+}
+
 const InfoCard = () => {
   return (
     <Container id="landpage-info-container">
@@ -56,7 +63,7 @@ const InfoCard = () => {
           Bio
         </Heading>
         <Paragraph>
-          Tenho 21 anos e sou um estudante de Análise e Desenvolvimento de
+          Tenho {calcYearsFromDate(new Date('2001-10-02'))} anos e sou um estudante de Análise e Desenvolvimento de
           Sistemas em busca de uma oportunidade profissional para dar início à
           minha carreira em tecnologia.
         </Paragraph>
