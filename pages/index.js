@@ -4,6 +4,7 @@ import { Link } from 'react-scroll'
 import Typewriter from 'typewriter-effect'
 import Layout from '../components/layouts/article'
 import BackgroundScene from '../components/background-scene'
+import CentralizedContainer from '../components/centralized-container'
 import InfoCard from '../components/info-card'
 import Section from '../components/section'
 import { IoIosArrowDown } from 'react-icons/io'
@@ -13,41 +14,31 @@ const Page = () => {
     <Layout title="Início">
       <BackgroundScene />
       <Box>
-        <Container
-          id="landpage-header-container"
-          style={{
-            display: 'flex',
-            height: 'calc(100vh - 190px)',
-            alignItems: 'center',
-            justifyContent: 'center'
-          }}
-        >
-          <Box align="center">
-            <Heading
-              as="h1"
-              style={{
-                fontFamily: 'Secular One',
-                letterSpacing: '.15rem',
-                wordSpacing: '.3rem'
+        <CentralizedContainer id="landpage-header-contaianer" style={{ textAlign: 'center' }}>
+          <Heading
+            as="h1"
+            style={{
+              fontFamily: 'Secular One',
+              letterSpacing: '.15rem',
+              wordSpacing: '.3rem'
+            }}
+          >
+            <span style={{ color: 'indianred' }}>Matheus</span> Queiroz
+          </Heading>
+          <Section delay={0.3} verticalFadeIn>
+            <Typewriter
+              onInit={typewriter => {
+                typewriter
+                  .changeDeleteSpeed(32)
+                  .typeString('Técnico em Informática')
+                  .pauseFor(2000)
+                  .deleteAll()
+                  .typeString('Analista e Desenvolvedor de Sistemas')
+                  .start()
               }}
-            >
-              <span style={{ color: 'indianred' }}>Matheus</span> Queiroz
-            </Heading>
-            <Section delay={0.3} verticalFadeIn>
-              <Typewriter
-                onInit={typewriter => {
-                  typewriter
-                    .changeDeleteSpeed(32)
-                    .typeString('Técnico em Informática')
-                    .pauseFor(2000)
-                    .deleteAll()
-                    .typeString('Analista e Desenvolvedor de Sistemas')
-                    .start()
-                }}
-              />
-            </Section>
-          </Box>
-        </Container>
+            />
+          </Section>
+        </CentralizedContainer>
         <Container
           style={{
             display: 'flex',
@@ -68,7 +59,7 @@ const Page = () => {
               duration={1000}
               style={{ cursor: 'pointer' }}
             >
-              <motion.div whileHover={{translateY: 10}}>
+              <motion.div whileHover={{ translateY: 10 }}>
                 <Text>Ver mais</Text>
                 <Icon as={IoIosArrowDown} size="25px" />
               </motion.div>
