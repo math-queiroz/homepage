@@ -7,7 +7,7 @@ import prefix from '../lib/image-prefix'
 
 const Projetos = () => {
   return (
-    <Layout title="Projetos">
+    <Layout title="Meus Projetos">
       <Container maxWidth="container.md">
         <Heading as="h3" fontSize={20} mb={6} variant="section-title">
           Projetos Acadêmicos

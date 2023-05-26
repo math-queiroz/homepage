@@ -20,7 +20,7 @@ import prefix from '../lib/image-prefix'
 
 const Bio = () => {
   return (
-    <Layout title="Sobre">
+    <Layout title="Sobre Mim">
       <Container mt={6}>
         <Box
           display={{ md: 'flex' }}
