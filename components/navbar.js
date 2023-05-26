@@ -76,11 +76,11 @@ const Navbar = props => {
                 <NextLink href="/projects" path={path} scroll={false} passHref>
                   <MenuItem as={Link}>Projetos</MenuItem>
                 </NextLink>
-                <MenuItem as={Link} href="https://github.com/math-queiroz/homepage">
-                  GitHub
-                </MenuItem>
                 <NextLink href="/about" path={path} scroll={false} passHref>
                   <MenuItem as={Link}>Sobre</MenuItem>
+                </NextLink>
+                <NextLink href="https://github.com/math-queiroz/homepage" passHref>
+                  <MenuItem as={Link} target="_blank">Fonte</MenuItem>
                 </NextLink>
               </MenuList>
             </Menu>
@@ -102,8 +102,8 @@ const Navbar = props => {
             path={path}
             externalLink
           >
-            <Icon as={IoLogoGithub} size="15px" mr={2} />
-            GitHub
+            <Icon as={IoLogoGithub} size="15px" mr={2}/>
+            Fonte
           </LinkItem>
           <LinkItem href="/projects">Projetos</LinkItem>
           <LinkItem href="/about">Sobre</LinkItem>
