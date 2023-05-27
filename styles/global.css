@@ -1,0 +1,11 @@
+::-moz-selection {
+    background: lightcoral;
+  }
+  
+  ::-webkit-selection {
+    background: lightcoral;
+  }
+  
+  ::selection {
+    background: lightcoral;
+  }

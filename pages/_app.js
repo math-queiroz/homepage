@@ -4,6 +4,7 @@ import { ChakraProvider } from '@chakra-ui/provider'
 import theme from '../lib/theme'
 import Layout from '../components/layouts/main'
 import Fonts from '../components/fonts'
+import '../styles/global.css'
 
 const Website = ({ Component, pageProps, router }) => {
   const scrollToTop = useCallback(() => window.scrollTo(0,0), []) 
