@@ -16,7 +16,10 @@ const NotFound = () => (
       <Heading as="h1" align="center">
         <Text fontFamily="Secular One" fontSize="5em" mb={-16} style={{
           /* Text Gradient */
-          background: 'linear-gradient(to bottom, #eee 25%, #00000000 75%)',
+          backgroundImage: useColorModeValue(
+            'linear-gradient(to bottom, #000000 25%, #00000000 75%)', 
+            'linear-gradient(to bottom, #ffffff 25%, #00000000 75%)'
+          ),
           WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent',
           /* Prevent Selection */
           WebkitUserSelect: 'none', MsUserSelect: 'none', userSelect: 'none'
