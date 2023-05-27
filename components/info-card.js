@@ -55,7 +55,7 @@ const InfoCard = () => {
           p={3}
           align="center"
         >
-          <i>Sou um desenvolvedor front-end com frameworks em NodeJS</i>
+          <i>Sou um estudante de desenvolvimento front-end, interessado também em engenharia e desenvolvimento de sistemas.</i>
         </Box>
         <Heading as="h3" variant="section-title">
           Bio
