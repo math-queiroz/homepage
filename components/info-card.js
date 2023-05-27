@@ -27,9 +27,6 @@ const InfoCard = () => {
       <Section delay={1.2}>
         <Box align="center" mt={10}>
           <Image
-            borderColor="indianred"
-            borderWidth={3}
-            borderStyle="solid"
             maxWidth="110px"
             display="inline-block"
             borderRadius="full"
@@ -38,6 +35,7 @@ const InfoCard = () => {
           />
 
           <Heading
+            fontFamily="Secular One"
             color="indianred"
             align="center"
             as="h2"
@@ -53,19 +51,20 @@ const InfoCard = () => {
         <Box
           borderRadius="lg"
           bg={useColorModeValue('blackAlpha.200', 'whiteAlpha.200')}
-          my={10}
+          my={8}
           p={3}
           align="center"
         >
-          Simples mas em constante movimento.
+          <i>Sou um desenvolvedor front-end com frameworks em NodeJS</i>
         </Box>
         <Heading as="h3" variant="section-title">
           Bio
         </Heading>
         <Paragraph>
           Tenho {calcYearsFromDate(new Date('2001-10-02'))} anos e sou um estudante de Análise e Desenvolvimento de
-          Sistemas em busca de uma oportunidade profissional para dar início à
-          minha carreira em tecnologia.
+          Sistemas atuando profissionalmente como Analista de Suporte Computacional na @Autbank - Projetos e Consultoria.
+          Busco sempre aprender sobre ferramentas e técnicas de desenvolvimento de software com entusiasmo voltado
+          à programação em diversas linguagens, ainda que não atuando profissionalmente com elas.
         </Paragraph>
       </Section>
 

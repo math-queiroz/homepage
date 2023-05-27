@@ -30,7 +30,7 @@ const Bio = () => {
         >
           <Image
             mr={6}
-            borderColor="whiteAlpha.800"
+            borderColor="#F1E8DBC0"
             borderWidth={2}
             borderStyle="solid"
             maxWidth="80px"
