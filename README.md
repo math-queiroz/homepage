@@ -24,12 +24,6 @@ $PROJECT_ROOT
 │   # Arquivos estáticos
 └── public
 ```
-
-## Licença
-MIT License.
-
-Você pode usar este código, ou trechos dele, em seus projetos livremente desde que não se utilize das imagens nele presente.
-
 ---
 
 ### Sobre Este Site
