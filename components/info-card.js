@@ -25,7 +25,7 @@ const InfoCard = () => {
   return (
     <Container id="landpage-info-container">
       <Section delay={1.2}>
-        <Box align="center" mt={10}>
+        <Box align="center" my={10}>
           <Image
             maxWidth="110px"
             display="inline-block"
@@ -48,70 +48,36 @@ const InfoCard = () => {
           <p>Analista e Desenvolvedor de Sistemas</p>
         </Box>
 
-        <Box
-          borderRadius="lg"
-          bg={useColorModeValue('blackAlpha.200', 'whiteAlpha.200')}
-          my={8}
-          p={3}
-          align="center"
-        >
-          <i>Sou um estudante de desenvolvimento front-end, interessado também em engenharia e desenvolvimento de sistemas.</i>
-        </Box>
         <Heading as="h3" variant="section-title">
           Bio
         </Heading>
         <Paragraph>
-          Tenho {calcYearsFromDate(new Date('2001-10-02'))} anos e sou um estudante de Análise e Desenvolvimento de
-          Sistemas atuando profissionalmente como Analista de Suporte Computacional na @Autbank - Projetos e Consultoria.
-          Busco sempre aprender sobre ferramentas e técnicas de desenvolvimento de software com entusiasmo voltado
-          à programação em diversas linguagens, ainda que não atuando profissionalmente com elas.
+          Tenho {calcYearsFromDate(new Date('2001-10-02'))} anos e sou um analista de sistemas
+          atuando profissionalmente como analista de suporte computacional.
+          Busco sempre aprender sobre novas técnicas e ferramentas de desenvolvimento de software com foco voltado
+          à programação nas mais diversas linguagens.
         </Paragraph>
-      </Section>
-
-      <Section delay={1.5}>
-        <Heading as="h3" variant="section-title">
-          Competências
-        </Heading>
-        <List display="inline-grid" minWidth="225px">
-          <Text fontWeight="bold">Hard Skills</Text>
-          <ListItem>JavaScript</ListItem>
-          <ListItem>HTML/CSS</ListItem>
-          <ListItem>Java</ListItem>
-          <ListItem>SQL</ListItem>
-          <ListItem>Python</ListItem>
-          <br />
-          <Text fontWeight="bold">Idiomas</Text>
-          <ListItem>Inglês - Intermediário</ListItem>
-          <br />
-        </List>
-        <List display="inline-grid" minWidth="225px">
-          <Text fontWeight="bold">Soft Skill</Text>
-          <ListItem>Trabalho em Equipe</ListItem>
-          <ListItem>Comunicação Clara</ListItem>
-          <ListItem>Adaptabilidade</ListItem>
-          <br />
-          <Text fontWeight="bold">Outras Competências</Text>
-          <ListItem>Git</ListItem>
-          <ListItem>Microsoft Office</ListItem>
-          <ListItem>Ambiente Linux</ListItem>
-        </List>
       </Section>
 
       <Section delay={1.8}>
         <Heading as="h3" variant="section-title" mb="1em">
           Formação Acadêmica
         </Heading>
-        <Box ml={4}>
+        <Box mx={4}>
           <Heading as="h5" fontSize={18}>
             FATEC Ipiranga - Pastor Enéas Tognini
           </Heading>
-          <Text>
-            Análise e Desenvolvimento de Sistemas - Cursando atualmente
-          </Text>
+          <Box display="flex">
+            <Text style={{flexGrow: 1}}>Análise e Desenvolvimento de Sistemas</Text>
+            <Text align="right"><small>2019 - 2021</small></Text>
+          </Box>
           <Heading as="h5" fontSize={18} mt="1em">
-            ETEC Professor Camargo Aranha - 2018
+            ETEC Professor Camargo Aranha
           </Heading>
-          <Text>Técnico em Informática - Cursado de 2016 a 2018</Text>
+          <Box display="flex">
+            <Text style={{flexGrow: 1}}>Ensino técnico em Informática</Text>
+            <Text align="right"><small>2016 - 2018</small></Text>
+          </Box>
         </Box>
       </Section>
     </Container>

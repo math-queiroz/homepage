@@ -4,7 +4,7 @@ import { Link } from 'react-scroll'
 import Typewriter from 'typewriter-effect'
 import Layout from '../components/layouts/article'
 import BackgroundScene from '../components/background-scene'
-import CentralizedContainer from '../components/centralized-container'
+import CentralizedBox from '../components/centralized-box'
 import InfoCard from '../components/info-card'
 import Section from '../components/section'
 import { IoIosArrowDown } from 'react-icons/io'
@@ -14,7 +14,7 @@ const Page = () => {
     <Layout title="Início">
       <BackgroundScene />
       <Box>
-        <CentralizedContainer id="landpage-header-contaianer" style={{ textAlign: 'center' }}>
+        <CentralizedBox id="landpage-header-contaianer" style={{ textAlign: 'center' }}>
           <Heading
             as="h1"
             style={{
@@ -27,18 +27,17 @@ const Page = () => {
           </Heading>
           <Section delay={0.3} verticalFadeIn>
             <Typewriter
-              onInit={typewriter => {
-                typewriter
-                  .changeDeleteSpeed(32)
-                  .typeString('Técnico em Informática')
-                  .pauseFor(2000)
-                  .deleteAll()
-                  .typeString('Analista e Desenvolvedor de Sistemas')
-                  .start()
+              options={{
+                strings: ['Analista de Sistemas', 'Desenvolvedor de Software', 'Técnico em Informática'],
+                autoStart: true,
+                loop: true,
+                delay: 60,
+                deleteSpeed: 40,
+                cursor: ''
               }}
             />
           </Section>
-        </CentralizedContainer>
+        </CentralizedBox>
         <Container
           style={{
             display: 'flex',
@@ -67,7 +66,9 @@ const Page = () => {
           </Section>
         </Container>
       </Box>
-      <InfoCard id="landpage-info-container" />
+      <CentralizedBox>
+        <InfoCard id="landpage-info-container" />
+      </CentralizedBox>
     </Layout>
   )
 }

@@ -110,11 +110,7 @@ const Bio = () => {
             Sobre Este Site
           </Heading>
           <Paragraph>
-            Desenvolvido em Next.JS, parte da confecção deste site inspirou-se no&nbsp;
-            <Link href="https://youtu.be/bSMZgXzC9AA" color={'indianred'}>
-              vídeo
-            </Link>
-            &nbsp;disponibilizado por{' '}
+            {'Desenvolvido em Next.JS, parte da confecção deste site inspirou-se no repositório de '}
             <Link href="https://www.craftz.dog">
               <b>@devaslife</b>
             </Link>
