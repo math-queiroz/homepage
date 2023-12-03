@@ -7,12 +7,12 @@ import {
   Button,
   useColorModeValue
 } from '@chakra-ui/react'
-import CentralizedContainer from '../components/centralized-container'
+import CentralizedBox from '../components/centralized-box'
 import Layout from '../components/layouts/article'
 
 const NotFound = () => (
   <Layout>
-    <CentralizedContainer>
+    <CentralizedBox>
       <Heading as="h1" align="center">
         <Text fontFamily="Secular One" fontSize="5em" mb={-16} style={{
           /* Text Gradient */
@@ -45,7 +45,7 @@ const NotFound = () => (
           </Button>
         </NextLink>
       </Box>
-    </CentralizedContainer>
+    </CentralizedBox>
   </Layout>
 )
 
