@@ -40,7 +40,7 @@ const NotFound = () => (
             Mas dessa vez, não há nada a explorar por aqui...</Text>
         </i></small>
         <NextLink href="/">
-          <Button my={4} bg="indianred" color="white">
+          <Button my={10} bg="indianred" color="white">
             Voltar ao Início
           </Button>
         </NextLink>
