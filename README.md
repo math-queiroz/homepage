@@ -1,3 +1,5 @@
+[![pages-build-deployment](https://github.com/math-queiroz/homepage/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/math-queiroz/homepage/actions/workflows/pages/pages-build-deployment)
+
 # Homepage
 Meu site pessoal disponível em https://math-queiroz.github.io/homepage
 
